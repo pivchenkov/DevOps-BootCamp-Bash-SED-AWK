@@ -9,7 +9,7 @@ TARGET_USER_AWK="saned"
 if [[ -f "$FILE" ]]; then
   echo "$FILE exists" > /dev/null
 else
-  sudo cp ./passwd ./passwd_new && echo "$FILE created successfully" > /dev/null
+  cp ./passwd ./passwd_new && echo "$FILE created successfully" > /dev/null
 fi
 # END preparing the target file
 
